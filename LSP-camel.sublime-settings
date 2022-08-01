@@ -1,0 +1,107 @@
+{
+	"env": {
+		// "JAVA_HOME": "C:\\Program Files\\Java\\jre1.8.0_251",
+		// "HTTP_PROXY_HOST": "",
+		// "HTTP_PROXY_PORT": "",
+		// "HTTP_PROXY_USERNAME": "",
+		// "HTTP_PROXY_PASSWORD": "",
+	},
+
+	// JavaVM arguments to run Camel with
+	//
+	// Note:
+	//   Copy the whole list to your user settings
+	//   in order to add, remove or modify single arguments.
+	"java_vmargs": [
+		"-Xmx64M",
+		"-XX:+UseG1GC",
+		"-XX:+UseStringDeduplication",
+		"-DwatchParentProcess=false",
+
+		// use system proxy configuration
+		"-Djava.net.useSystemProxies=true",
+
+		// user authentication
+		// "-Dhttp.proxyUser=<user>",
+		// "-Dhttp.proxyPassword=<password>",
+
+		// custom http proxy
+		// "-Dhttp.proxyHost=<proxy_host>",
+		// "-Dhttp.proxyPort=<proxy_port>",
+
+		// custom https proxy
+		// "-Dhttps.proxyHost=<proxy_host>",
+		// "-Dhttps.proxyPort=<proxy_port>",
+	],
+
+	// base scope selectors to attach to
+	"selector": "text.plist | text.xml",
+
+	// type of buffers to attach to
+	"schemes": ["file", "buffer", "res"],
+
+	"initializationOptions": {
+		"settings": {
+			"camel.logs.client": true,
+			"camel.logs.file": "$storage_path/lemminx.log",
+			"camel.trace.server": "off",
+			"camel.telemetry.enabled": false,
+			"camel.useCache": true
+		},
+		"extendedClientCapabilities": {
+			"actionableNotificationSupport": false,
+			"openSettingsCommandSupport": false,
+			"bindingWizardSupport": false,
+			"shouldLanguageServerExitOnShutdown": true
+		}
+	},
+
+	"settings": {
+		"camel.catalogs": [],
+
+		"camel.fileAssociations": [],
+
+		"camel.codeLens.enabled": false,
+
+		"camel.completion.autoCloseTags": true,
+		"camel.completion.autoCloseRemovesContent": true,
+
+		"camel.format.enabled": true,
+		"camel.format.experimental": false,
+		"camel.format.closingBracketNewLine": false,
+		"camel.format.emptyElements": "ignore",
+		"camel.format.enforceQuoteStyle": "ignore",
+		"camel.format.grammarAwareFormatting": true,
+		"camel.format.insertFinalNewline": false,
+		"camel.format.joinCDATALines": false,
+		"camel.format.joinCommentLines": false,
+		"camel.format.joinContentLines": false,
+		"camel.format.maxLineWidth": 80,
+		"camel.format.preserveAttributeLineBreaks": false,
+		"camel.format.preservedNewlines": 2,
+		"camel.format.preserveEmptyContent": false,
+		"camel.format.preserveSpace": false,
+		"camel.format.spaceBeforeEmptyCloseTag": false,
+		"camel.format.splitAttributes": false,
+		"camel.format.splitAttributesIndentSize": 2,
+		"camel.format.trimFinalNewlines": false,
+		"camel.format.trimTrailingWhitespace": false,
+		"camel.format.xsiSchemaLocationSplit": "none",
+
+		"camel.preferences.quoteStyle": "double",
+		"camel.preferences.showSchemaDocumentationType": "all",
+
+		"camel.symbols.enabled": true,
+		"camel.symbols.excluded": [],
+		"camel.symbols.filters": [],
+		"camel.symbols.maxItemsComputed": 5000,
+		"camel.symbols.showReferencedGrammars": true,
+
+		"camel.validation.enabled": true,
+		"camel.validation.disallowDocTypeDecl": false,
+		"camel.validation.namespaces.enabled": "always",
+		"camel.validation.noGrammar": "hint",
+		"camel.validation.resolveExternalEntities": true,
+		"camel.validation.schema.enabled": "always",
+	}
+}

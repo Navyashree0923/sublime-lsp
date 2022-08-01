@@ -1,0 +1,32 @@
+{
+	"contributions": {
+		"settings": [
+			{
+				"file_patterns": [
+					"/LSP-lemminx.sublime-settings"
+				],
+				"schema": {
+					"$id": "sublime://settings/LSP-lemminx",
+					"definitions": {
+						"PluginConfig": {
+							"properties": {
+								"initializationOptions": {
+									"type": "object",
+									"properties": {
+										"settings": {
+											"$ref": "sublime://settings/LSP-lemminx#/definitions/ServerSettings"
+										}
+									}
+								},
+								"settings": {
+									"$ref": "sublime://settings/LSP-lemminx#/definitions/ServerSettings"
+								}
+							}
+						}
+          }
+        }
+      }
+  ]
+  }
+	
+}

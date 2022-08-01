@@ -1,0 +1,18 @@
+[
+	{
+		"caption": "Preferences: LSP-camel Settings",
+		"command": "edit_settings",
+		"args": {
+			"base_file": "${packages}/LSP-camel/LSP-camel.sublime-settings",
+			"default": "// Settings in here override those in \"LSP-camel/LSP-camel.sublime-settings\"\n\n{\n\t$0\n}\n"
+		}
+	},
+	{
+		"caption": "CAMEL: Check File Pattern",
+		"command": "lsp_execute",
+		"args": {
+			"command_name": "camel.check.file.pattern",
+			"command_args": ["${document_id}"]
+		}
+	},
+]
