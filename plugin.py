@@ -12,8 +12,8 @@ from LSP.plugin import (
 )
 
 
-SERVER_URL = "https://repo.eclipse.org/content/repositories/camel-releases/org/sublime/camel/org.sublime.camel/0.21.0/org.eclipse.lemminx-0.21.0-uber.jar"
-SERVER_SHA256 = "604e8ccea36332f3b9b5d2b7bc58e2269b5f44243c710774fb0654bf94d350ca"
+SERVER_URL = "https://jar-download.com/artifacts/com.github.camel-tooling/camel-lsp-server/1.6.0/source-code"
+SERVER_SHA256:"LlCbTPYXMCvIhxSkEFTbI9872EnQeWfubqX7HAAtPd8"
 
 def plugin_unloaded():
     unregister_plugin(CamelPlugin)
