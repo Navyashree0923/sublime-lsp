@@ -3,10 +3,10 @@
 		"settings": [
 			{
 				"file_patterns": [
-					"/LSP-lemminx.sublime-settings"
+					"/LSP-camel.sublime-settings"
 				],
 				"schema": {
-					"$id": "sublime://settings/LSP-lemminx",
+					"$id": "sublime://settings/LSP-camel",
 					"definitions": {
 						"PluginConfig": {
 							"properties": {
@@ -14,12 +14,12 @@
 									"type": "object",
 									"properties": {
 										"settings": {
-											"$ref": "sublime://settings/LSP-lemminx#/definitions/ServerSettings"
+											"$ref": "sublime://settings/LSP-camel#/definitions/ServerSettings"
 										}
 									}
 								},
 								"settings": {
-									"$ref": "sublime://settings/LSP-lemminx#/definitions/ServerSettings"
+									"$ref": "sublime://settings/LSP-camel#/definitions/ServerSettings"
 								}
 							}
 						}

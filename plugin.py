@@ -100,11 +100,11 @@ class CamelPlugin(AbstractPlugin):
     def on_settings_changed(cls, dotted):
         # prepend a list of fixed file associations
         dotted.set(
-            "xml.fileAssociations",
-            cls.file_associations + (dotted.get("xml.fileAssociations") or [])
+            "camel.fileAssociations",
+            cls.file_associations + (dotted.get("camel.fileAssociations") or [])
         )
         # adjust working dir to package storage directory
-        dotted.set("xml.server.workDir", cls.server_dir())
+        dotted.set("camel.server.workDir", cls.server_dir())
 
     @classmethod
     def additional_variables(cls):
